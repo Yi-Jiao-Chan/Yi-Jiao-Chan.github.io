@@ -431,9 +431,9 @@
     
     <category term="dfs" scheme="https://yi-jiao-chan.github.io/tags/dfs/"/>
     
-    <category term="bfs" scheme="https://yi-jiao-chan.github.io/tags/bfs/"/>
-    
     <category term="并查集" scheme="https://yi-jiao-chan.github.io/tags/%E5%B9%B6%E6%9F%A5%E9%9B%86/"/>
+    
+    <category term="bfs" scheme="https://yi-jiao-chan.github.io/tags/bfs/"/>
     
   </entry>
   
