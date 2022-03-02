@@ -2,25 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yi-jiao-chan.github.io/posts/cf4fe7c3.html</loc>
-    
-    <lastmod>2022-03-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yi-jiao-chan.github.io/posts/34b7e518.html</loc>
-    
-    <lastmod>2022-03-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://yi-jiao-chan.github.io/posts/e421b227.html</loc>
+    <loc>https://yi-jiao-chan.github.io/posts/13b55345.html</loc>
     
     <lastmod>2022-03-02</lastmod>
     
@@ -38,9 +20,27 @@
   </url>
   
   <url>
-    <loc>https://yi-jiao-chan.github.io/posts/13b55345.html</loc>
+    <loc>https://yi-jiao-chan.github.io/posts/e421b227.html</loc>
     
-    <lastmod>2022-02-28</lastmod>
+    <lastmod>2022-03-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yi-jiao-chan.github.io/posts/cf4fe7c3.html</loc>
+    
+    <lastmod>2022-03-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yi-jiao-chan.github.io/posts/34b7e518.html</loc>
+    
+    <lastmod>2022-03-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
