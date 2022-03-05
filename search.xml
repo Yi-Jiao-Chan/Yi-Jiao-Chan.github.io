@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>计算机网络学习笔记-Https是如何加密的？</title>
+      <link href="/posts/ed7edf56.html"/>
+      <url>/posts/ed7edf56.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、简介"><a href="#一、简介" class="headerlink" title="一、简介"></a>一、简介</h2><ul><li>HTTP使用明文通信（不加密），内容可能被窃听。</li><li>HTTP不验证通信双方身份，因此有可能遭遇伪装。</li><li>HTTP无法验证报文的完整性，报文可能会遭到篡改。</li></ul><p><strong>HTTPS&#x3D;HTTP+通信加密+证书+完整性保护</strong></p><h2 id="二、通信加密"><a href="#二、通信加密" class="headerlink" title="二、通信加密"></a>二、通信加密</h2><p>HTTPS同时使用了两种加密方式</p><ol><li>对称加密：加密和解密用的是同一密钥，优点是加密解密速度快，缺点是需要将密钥发送给接收方。用于HTTP通信交换报文阶段。</li><li>非对称加密：加密和解密用的是不同密钥，优点是不需要将密钥发送给接收方，缺点是加密解密速度慢。用于传输《对称加密的密钥》</li></ol><p><img src="https://gitee.com/aged_lemon/typora-image/raw/master/image/image-20220305233950281.png" alt="image-20220305233950281"></p><h2 id="三、证书"><a href="#三、证书" class="headerlink" title="三、证书"></a>三、证书</h2><p>如果公开密钥在传输过程中被攻击者拦截，并将公开密钥进行替换，接收端如果使用该被替换的公开密钥进行加密，则数据会被攻击方轻松破解。数字证书正是解决这种问题而出现的。</p><p><strong>数字证书</strong>：</p><ol><li>是由数字证书认证机构（CA）和其相关机关颁发的的公开密钥证书。</li><li>证书组成：证书内容（包括证书所有人、服务器公钥等信息）、加密算法、加密密文（证书内容加密的产物）</li></ol><p><strong>数字认证机构</strong>：是客户端和服务器双方都可信赖的第三方机构。</p><p><strong>证书申请过程</strong>：</p><ol><li>服务器运营人员向CA提出公开密钥的申请。</li><li>CA核实申请者身份后，将申请者提交的公开密钥、申请者信息、CA的信息等组合成证书内容，然后做数字签名（实际上是将证书内容使用SHA1算法进行hash，然后用CA的私钥对hash结果进行加密）</li><li>CA将证书内容、加密算法、数字签名组合成证书，然后交还给服务器。</li></ol><p><strong>证书如何保证安全？</strong></p><ol><li>服务器将数字证书发送给客户端，客户端收到证书后对数字证书进行验证（使用对应的CA的公钥和证书内的加密算法对数字签名进行解密，然后将证书内容使用SHA1算法进行hash，将两者结果对比），验证通过后客户端能确定这个证书是可信的。</li><li>CA的公钥如何安全传输是一个问题，因此多数浏览器开发商会在浏览器内部植入常用CA的公钥。</li></ol><p><img src="https://gitee.com/aged_lemon/typora-image/raw/master/image/image-20220305235402474.png" alt="image-20220305235402474"></p><h2 id="四、HTTPS的安全通信机制"><a href="#四、HTTPS的安全通信机制" class="headerlink" title="四、HTTPS的安全通信机制"></a>四、HTTPS的安全通信机制</h2><ol><li>Client发送Client Hello报文开始SSL通信。报文中包含Client支持的<strong>SSL版本、加密组件列表（所使用的加密算法和密钥长度等）</strong></li><li>Server发送Server Hello报文响应Client，报文中同样包含Server支持的SSL版本和加密组件列表（<strong>从Client的Client Hello报文中筛选得出</strong>）</li><li>Server向Client发送Certificate报文，其中包含自己的<strong>公开密钥证书</strong></li><li>Server向Client发送Server Hello Done报文，表示SSL通信<strong>握手协商部分结束</strong></li><li>Client发送Client Key Exchange报文，其中包含了通信加密中使用的一种被称为Pre-master secret的随机<strong>密码串</strong>，该密码串<strong>已使用服务器的公钥进行加密</strong></li><li>Client发送Change Cipher Spec报文，告诉服务器今后的通信都用Pre-master secret（使用步骤2中的加密算法）进行对称加密。</li><li>Client发送Finished报文，该报文包含连接至今全部报文的整体校验值。这次握手协商是否能够成功，要以服务器是否能够正确解密该报文作为判定标准。<strong>（该报文用步骤5中的随机密码串、步骤2中的加密方法进行加密）</strong></li><li>Server发送Change Cipher Spec报文。</li><li>Server发送Finished报文。</li><li>Client和Serve的Finished报文交换完毕，SSL连接建立完成，通信会收到SSL的保护。从此处开始进行应用层协议的通信，即发送HTTP请求。</li><li>应用层协议通信，即发送HTTP相应。</li><li>最后由客户端断开连接。断开连接时，发送close_notify报文。上图做了一些省略，这步之后再发送TCP FIN报文来关闭与TCP的通信。</li></ol><p><img src="https://gitee.com/aged_lemon/typora-image/raw/master/image/image-20220306001438614.png" alt="image-20220306001438614"></p><p><img src="https://gitee.com/aged_lemon/typora-image/raw/master/image/image-20220306002632730.png" alt="image-20220306002632730"></p><p><strong>SSL和TLS的关系</strong>：TLS是以SSL为基准开发的，有时会统一称为SSL</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计算机网络 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>操作系统学习笔记-Linux常用命令</title>
       <link href="/posts/27065e75.html"/>
       <url>/posts/27065e75.html</url>
