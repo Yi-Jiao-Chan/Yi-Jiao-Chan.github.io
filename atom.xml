@@ -6,7 +6,7 @@
   <link href="https://yi-jiao-chan.github.io/atom.xml" rel="self"/>
   
   <link href="https://yi-jiao-chan.github.io/"/>
-  <updated>2022-03-06T12:35:37.759Z</updated>
+  <updated>2022-03-06T12:36:04.605Z</updated>
   <id>https://yi-jiao-chan.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://yi-jiao-chan.github.io/posts/e792a541.html"/>
     <id>https://yi-jiao-chan.github.io/posts/e792a541.html</id>
     <published>2022-03-06T11:42:00.000Z</published>
-    <updated>2022-03-06T12:35:37.759Z</updated>
+    <updated>2022-03-06T12:36:04.605Z</updated>
     
     <content type="html"><![CDATA[<h2 id="HTTP1-1与1-0的区别"><a href="#HTTP1-1与1-0的区别" class="headerlink" title="HTTP1.1与1.0的区别"></a>HTTP1.1与1.0的区别</h2><ol><li>HTTP1.1默认使用长连接，而1.0默认使用短连接</li><li>HTTP1.1增加了大量的状态码，比如：<code>100(Continue)</code>——在请求大量资源时返回的预热，询问Client是否真的需要该资源</li><li>HTTP1.1在缓存上增加了许多细节，但具体实现与1.0一致。<ol><li>每个响应体都会带上一个时间，表示服务器中这些数据最后被修改的时间。</li><li>Client每次发送请求的时候都会携带对应的时间，询问服务器该资源是否过期，服务器比对Client发送过来的时间以及资源的最后修改时间，如果一致，则返回状态码为304的响应让Client从缓存取，否则返回200并带上最新资源响应体。</li></ol></li><li>HTTP1.1在请求头加入了Host字段，标记了服务器的主机名。因为一个IP地址可以由多个域名映射，一台服务器可以部署多个应用，不同的域名往往是不同的应用。DNS解析之后，会将已解析的域名替换成ip地址，此时服务器不知道客户想要访问的到底哪个应用。而HTTP1.1的Host字段就记录下了该域名，服务器就可以知道客户想要访问的应用</li><li>HTTP1.1增加了范围请求(<code>Range</code>)，可以请求某个数据的一部分（比如客户端只需要某个对象的一部分信息），也支持了断点传输。服务器可以忽略<code>Range</code>并返回全部数据，也可以返回若干<code>Range</code>响应。</li></ol><h2 id="HTTP2-0"><a href="#HTTP2-0" class="headerlink" title="HTTP2.0"></a>HTTP2.0</h2><h3 id="SPDY：HTTP1-x的升级"><a href="#SPDY：HTTP1-x的升级" class="headerlink" title="SPDY：HTTP1.x的升级"></a>SPDY：HTTP1.x的升级</h3><p>是由Google剔除的方案，优化了HTTP1.X的请求延迟，解决了安全性，具体如下。</p><ol><li><strong>降低延迟</strong>：使用多路复用，使多个请求可以使用同一个TCP连接并发执行（长连接是串行）。</li><li><strong>请求优先级</strong>：因为多路复用可能会导致重要请求被阻塞，因此SPDY允许给不同请求设置优先级，重要的优先级会先响应。比如访问一个网站，对html内容的请求应该是最先响应，然后才是css、js、图片等。</li><li><strong>压缩请求头</strong>：HTTP1.X的请求&#x2F;响应头是文本传输，而SPDY对请求头进行压缩再传输。</li><li><strong>基于HTTPS</strong>：强制使用HTTPS加密传输。</li><li><strong>服务端推送</strong>：允许在浏览器明确发出请求前，将一些资源推送给浏览器，存放在浏览器缓存中。避免了浏览器对所有资源的分次请求，提高效率。</li></ol><h3 id="HTTP2-0：SPDY的升级"><a href="#HTTP2-0：SPDY的升级" class="headerlink" title="HTTP2.0：SPDY的升级"></a>HTTP2.0：SPDY的升级</h3><p>HTTP2.0与SPDY的不同：</p><ol><li>HTTP2.0支持明文传输，而SPDY必须使用HTTPS</li><li>HTTP2.0与SPDY的请求&#x2F;响应头压缩算法不一样</li></ol>]]></content>
     
