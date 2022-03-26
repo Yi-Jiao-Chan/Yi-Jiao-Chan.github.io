@@ -315,9 +315,9 @@
     
     <category term="medium" scheme="http://yi-jiao-chan.github.io/tags/medium/"/>
     
-    <category term="dfs" scheme="http://yi-jiao-chan.github.io/tags/dfs/"/>
-    
     <category term="哈希" scheme="http://yi-jiao-chan.github.io/tags/%E5%93%88%E5%B8%8C/"/>
+    
+    <category term="dfs" scheme="http://yi-jiao-chan.github.io/tags/dfs/"/>
     
   </entry>
   
