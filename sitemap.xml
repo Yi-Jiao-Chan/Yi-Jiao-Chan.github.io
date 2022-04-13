@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yi-jiao-chan.github.io/posts/b9821352.html</loc>
+    
+    <lastmod>2022-04-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://yi-jiao-chan.github.io/posts/32ce1542.html</loc>
     
     <lastmod>2022-04-13</lastmod>
@@ -713,6 +722,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>http://yi-jiao-chan.github.io/tags/SrpingMVC/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -738,6 +754,13 @@
   
   <url>
     <loc>http://yi-jiao-chan.github.io/categories/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/categories/java/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
