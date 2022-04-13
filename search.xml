@@ -13,14 +13,18 @@
       
       <categories>
           
-          <category> leetcode </category>
+          <category> java </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> medium </tag>
+            <tag> Spring </tag>
+            
+            <tag> MyBatis </tag>
+            
+            <tag> SpringMVC </tag>
             
         </tags>
       
