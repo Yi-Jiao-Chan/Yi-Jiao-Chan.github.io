@@ -506,7 +506,7 @@
 
   
   <url>
-    <loc>http://yi-jiao-chan.github.io/tags/JVM/</loc>
+    <loc>http://yi-jiao-chan.github.io/tags/MyBatis/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -514,6 +514,27 @@
   
   <url>
     <loc>http://yi-jiao-chan.github.io/tags/Spring/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/tags/SpringMVC/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/tags/SrpingMVC/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/tags/JVM/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -562,13 +583,6 @@
   </url>
   
   <url>
-    <loc>http://yi-jiao-chan.github.io/tags/%E5%93%88%E5%B8%8C/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://yi-jiao-chan.github.io/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -577,6 +591,13 @@
   
   <url>
     <loc>http://yi-jiao-chan.github.io/tags/dfs/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/tags/%E5%93%88%E5%B8%8C/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -639,6 +660,13 @@
   </url>
   
   <url>
+    <loc>http://yi-jiao-chan.github.io/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://yi-jiao-chan.github.io/tags/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -647,13 +675,6 @@
   
   <url>
     <loc>http://yi-jiao-chan.github.io/tags/%E6%89%AB%E6%8F%8F%E7%BA%BF/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yi-jiao-chan.github.io/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -715,31 +736,17 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://yi-jiao-chan.github.io/tags/MyBatis/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yi-jiao-chan.github.io/tags/SrpingMVC/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yi-jiao-chan.github.io/tags/SpringMVC/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
   
   <url>
     <loc>http://yi-jiao-chan.github.io/categories/Java/</loc>
+    <lastmod>2022-04-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://yi-jiao-chan.github.io/categories/java/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -761,13 +768,6 @@
   
   <url>
     <loc>http://yi-jiao-chan.github.io/categories/%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3/</loc>
-    <lastmod>2022-04-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://yi-jiao-chan.github.io/categories/java/</loc>
     <lastmod>2022-04-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

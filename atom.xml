@@ -37,9 +37,9 @@
     <category term="java" scheme="http://yi-jiao-chan.github.io/categories/java/"/>
     
     
-    <category term="Spring" scheme="http://yi-jiao-chan.github.io/tags/Spring/"/>
-    
     <category term="MyBatis" scheme="http://yi-jiao-chan.github.io/tags/MyBatis/"/>
+    
+    <category term="Spring" scheme="http://yi-jiao-chan.github.io/tags/Spring/"/>
     
     <category term="SpringMVC" scheme="http://yi-jiao-chan.github.io/tags/SpringMVC/"/>
     
@@ -442,9 +442,9 @@
     
     <category term="medium" scheme="http://yi-jiao-chan.github.io/tags/medium/"/>
     
-    <category term="哈希" scheme="http://yi-jiao-chan.github.io/tags/%E5%93%88%E5%B8%8C/"/>
-    
     <category term="dfs" scheme="http://yi-jiao-chan.github.io/tags/dfs/"/>
+    
+    <category term="哈希" scheme="http://yi-jiao-chan.github.io/tags/%E5%93%88%E5%B8%8C/"/>
     
   </entry>
   
